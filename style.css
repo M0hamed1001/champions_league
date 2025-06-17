@@ -1,0 +1,724 @@
+body {
+    margin: 0px;
+    font-family: 'M PLUS 1 Code', sans-serif;
+
+}
+
+.nav {
+    display: flex;
+    width: 90%;
+    position: fixed;
+    left: 5vw;
+    border: 2px solid white;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 5;
+}
+
+.left-nav {
+    width: 190px;
+}
+
+.img1 {
+    width: 130px;
+    float: left;
+    filter: invert()
+}
+
+.navsub {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.list-item {
+    padding: 10px;
+    list-style: none;
+    color: white !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ham {
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 33vw;
+}
+
+.bar1, .bar2, .bar3 {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #101010;
+    transition: 0.4s;
+}
+
+a.nav-link:hover {
+    color: #b80fca !important;
+    filter: drop-shadow();
+    transition: ease-in-out .5s;
+}
+
+.hero img {
+    width: 100%;
+    height: 90vh;
+}
+
+.news {
+    padding: 16px;
+    background-image: url(https://img.uefa.com/imgml/uefacom/ucl/2020/news_d.jpg);
+}
+
+.news h2 {
+    color: #30316e;
+    /* color:  #30316e; */
+}
+
+.item1 {
+    grid-area: header;
+    position: relative;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+    position: relative;
+}
+
+.item6 {
+    grid-area: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header main right'
+        'header header main right'
+        'menu left footer footer'
+        'menu left footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #30316e;
+}
+
+.item1 img, .item2 img, .item6 img, .item4 img {
+    border: 4px solid #0540fb;
+}
+
+.item5 h2, .item1 h2 {
+    position: absolute;
+    bottom: 3vh;
+    left: 8vw;
+    color: white;
+}
+
+.item2, .item3, .item4, .item6 {
+    background-color: white;
+}
+
+.grid-item {
+    transition: transform 4s;
+    box-shadow: 0px 3px 7px 0px black;
+}
+
+.grid-item img:hover {
+    transform: scale(.9);
+}
+
+.button1 {
+    padding: 30px 10px;
+}
+
+.button1 button {
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #163ceb;
+    color: #163ceb;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.button1 button:hover {
+    background-color: #163ceb;
+    color: white;
+    transition: 1s;
+}
+
+.highlight {
+    background-image: linear-gradient(14.4deg, #03168d 15.36%, #07133a 74.97%);
+    padding: 15px;
+}
+
+.highlight-text {
+    padding: 20px 0px 0px 20px;
+    color: white;
+}
+
+.highlight-body {
+    display: flex;
+    /* gap: 40px; */
+    padding: 15px;
+    transition: 1s all;
+    color: white;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 30px #b904e0, -10px -10px 30px #b904e0;
+
+}
+
+.button2 {
+    padding: 30px 10px;
+}
+
+.button2 button {
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #b904e0;
+    color: #b904e0;
+    background-color: #03168d;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.button2 button:hover {
+    background-color: #b904e0;
+    color: #00004b;
+    transition: 1s;
+}
+
+.groubs {
+    background-image: url(https://img.uefa.com/imgml/uefacom/ucl/2020/news_d.jpg);
+    padding: 15px;
+}
+
+.groubs-text {
+    padding: 20px 0px 0px 20px;
+    color: #30316e;
+}
+
+.groubs-tables {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.tournament {
+    background-image: url(image/stats_d.webp);
+    padding: 15px;
+}
+
+.stats {
+    padding: 20px 0px 0px 20px;
+    color: white;
+}
+
+.det {
+    display: flex;
+    padding: 15px;
+    gap: 25px;
+}
+
+.matches {
+    backdrop-filter: blur(100px);
+    background-color: rgba(0, 0, 75, .3);
+    border-radius: 2px;
+    color: rgba(255, 255, 255, .8);
+    padding: 10px;
+    width: 15vw;
+    height: 16vh;
+    position: relative;
+}
+
+.matches h3 {
+    margin: 5px;
+    font-size: 16px;
+
+}
+
+.span {
+    display: flex;
+    align-items: baseline;
+    color: white;
+    margin: 5px;
+    position: relative;
+    bottom: -6px;
+}
+
+.span1{
+    display: flex;
+    align-items: baseline;
+    color: white;
+    margin: 5px;
+}
+
+.stats-bar {
+    background-color: rgba(0, 0, 75, .7);
+    margin: 5px;
+    position: relative;
+    bottom: -3px;
+}
+
+.bar-filler {
+    background-color: #5af7dc;
+    border-radius: 50px;
+    height: 4px;
+    width: 64%;
+    max-width: 100%;
+}
+
+.goals {
+    backdrop-filter: blur(100px);
+    background-color: rgba(0, 0, 75, .3);
+    border-radius: 2px;
+    color: rgba(255, 255, 255, .8);
+    padding: 10px;
+    width: 15vw;
+    height: 16vh;
+    position: relative;
+}
+
+.goals h3 {
+    margin: 5px;
+    font-size: 1.5vw;
+}
+
+.top-goals {
+    backdrop-filter: blur(100px);
+    background-color: rgba(0, 0, 75, .3);
+    border-radius: 2px;
+    color: rgba(255, 255, 255, .8);
+    padding: 10px;
+    width: 30vw;
+    height: 16vh;
+    position: relative;
+}
+
+.top-goals h3 {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.number {
+    font-size: 40px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.haller {
+    position: absolute;
+    left: 42px;
+    bottom: 40px;
+    font-size: 20px;
+}
+
+.goals h3, .assist h3, .matches h3, .top-goals h3{
+    position: absolute;
+    top: 3px;
+}
+
+.club-icon h2 {
+    position: absolute;
+    left: 81px;
+    bottom: 1vh;
+    font-size: 2vw;
+}
+
+.club-icon img {
+    position: absolute;
+    left: 40px;
+    width: 32px;
+    bottom: 2vh;
+}
+
+
+.assist {
+    backdrop-filter: blur(100px);
+    background-color: rgba(0, 0, 75, .3);
+    border-radius: 2px;
+    color: rgba(255, 255, 255, .8);
+    padding: 10px;
+    width: 30vw;
+    height: 16vh;
+    position: relative;
+}
+
+.assist h3 {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.pl-imag img {
+    width: 21%;
+    border-radius: 100%;
+    position: absolute;
+    left: 21vw;
+    bottom: 2vh;
+}
+
+.footer {
+    background-image: url(https://img.uefa.com/imgml/uefacom/ucl/2018/footer.jpg);
+    background-size: cover;
+    /* background-size: 100%; */
+    padding: 15px;
+    height: 76vh;
+}
+
+.section1 {
+    display: flex;
+    position: relative;
+}
+
+.section1 img {
+    padding: 40px 15px;
+}
+
+.section2 {
+    display: grid;
+    position: absolute;
+    left: 25vw;
+    top: 30px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.section3 {
+    display: grid;
+    position: absolute;
+    left: 50vw;
+    top: 12px;
+}
+
+.section4 {
+    display: grid;
+    position: absolute;
+    left: 75vw;
+    top: 12px;
+}
+
+.social {
+    width: 45%;
+    position: relative;
+    top: 110px;
+    left: 40vw;
+}
+
+.social img{
+    width: 7%;
+}
+
+.pos{
+    position: absolute;
+}
+
+/* ------------------highight-page------------------------------------------------ */
+.background-image{
+    background-image: url(https://img.uefa.com/imgml/uefacom/ucl/2020/news_d.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:450px) {
+
+    .img1 {
+        width: 90px;
+    }
+
+    .grid-container {
+        display: block;
+        gap: 20px;
+    }
+
+    .grid-item {
+        padding-bottom: 20px;
+        background-color: inherit;
+    }
+
+    .item5 h2, .item1 h2 {
+        font-size: 20px;
+        color: inherit;
+        position: initial;
+    }
+
+    .footer {
+        background-size: cover;
+    }
+
+    .section1 img {
+        position: relative;
+        right: 5vw;
+        top: -3vh;
+        width: 40%;
+    }
+
+    .section2{
+        font-size: 15px;
+        top: 31px;
+        left: 35vw;
+        width: 36%;
+    }
+    
+    .section3{
+        left: 69vw;
+        top: 25px;
+        font-size: 14px;
+    }
+
+    .section4{
+        left: 8vw;
+        top: 33vh;
+    }
+
+    .pos{
+        display: grid;
+        gap: 8px;
+        width: 19%;
+        left: 30vw;
+        top: -8vh;
+    }
+
+    .pos img{
+        width: 35px;
+    }
+
+    .det {
+        display: block;
+    }
+
+    .det h3 {
+        font-size: 25px;
+    }
+
+    .matches h3{
+        position: relative;
+        top: -9px;
+    }
+
+    .goals h3{
+        position: relative;
+        top: -9px;
+    }
+
+    .span{
+        bottom: 29px;
+    }
+
+    .goals h2{
+        font-size: 15px !important;
+        position: relative !important;
+        bottom: 49px !important;
+    }
+
+    .stats-bar{
+        bottom: 40px;
+    }
+
+    .top-goals h3{
+        top: -13px;
+    position: relative;
+    }
+
+    .assist h3{
+        top: -13px;
+    position: relative;
+    }
+
+    .matches, .goals, .assist, .top-goals {
+        width: 87vw;
+        height: none;
+        margin-bottom: 5px;
+    }
+
+    .number {
+        font-size: 60px;
+        bottom: -11px;
+    }
+
+    .haller {
+        left: 60px;
+        bottom: 12px;
+        font-size: 9vw;
+    }
+
+    .club-icon {
+        display: none;
+    }
+
+    .club-icon h3 {
+        width: 20px;
+        left: 356px;
+        bottom: 18px;
+        font-size: 34px !important
+    }
+
+    .pl-imag img {
+        width: 64px;
+        left: 67vw;
+        bottom: 2vh;
+    }
+}
+
+
+
+
+@media screen and (min-width:450px) and (max-width:750px) {
+    .img1 {
+        width: 90px;
+    }
+
+    .grid-container {
+        grid-template-areas:
+            'header header main main'
+            'right  right  menu menu'
+            'left left footer footer'
+
+    }
+
+    .grid-container h3 {
+        font-size: 20px;
+    }
+
+    .item5 h2, .item1 h2 {
+        font-size: 20px;
+        color: inherit;
+        position: initial;
+        background-color: white;
+    }
+
+    .image5 {
+        height: 76%;
+    }
+
+    .footer {
+        background-size: cover;
+    }
+
+    .section1 img {
+        width: 25%;
+    }
+
+    .section2, .section3, .section4 {
+        font-size: 15px;
+        width: 22%;
+    }
+
+    .det {
+        display: block;
+    }
+
+    .det h3 {
+        font-size: 22px;
+    }
+
+    .matches h3{
+        position: relative;
+        top: -9px;
+    }
+
+    .goals h3{
+        position: relative;
+        top: -9px;
+    }
+
+    .span{
+        bottom: 29px;
+    }
+
+    .goals h2{
+        font-size: 18px !important;
+        position: relative !important;
+        bottom: 48px !important;
+    }
+
+    .stats-bar{
+        bottom: 36px;
+    }
+
+    .top-goals h3{
+        top: -10px;
+    position: relative;
+    }
+
+    .assist h3{
+        top: -10px;
+    position: relative;
+    }
+
+    .matches, .goals, .assist, .top-goals {
+        width: 92vw;
+        height: none;
+        margin-bottom: 5px;
+    }
+
+    .number {
+        font-size: 60px;
+        bottom: -13px;
+    }
+
+    .haller {
+        left: 87px;
+        bottom: 38px;
+        font-size: 23px;
+    }
+
+    .club-icon img {
+        left: 85px;
+        bottom: 6px;
+        width: 37px;
+    }
+
+    .club-icon h2 {
+        width: 135px;
+        left: 133px;
+        bottom: -1px;
+        font-size: 25px !important
+    }
+
+    .pl-imag img {
+        left: 73vw;
+        bottom: 5px;
+        width: 75px;
+    }
+
+.social{
+    top: 90px;
+}
+
+    .social img{
+        width: 10%;
+    }
+}
